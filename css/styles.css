@@ -375,7 +375,6 @@ footer {
 
 #experience h2 {
     color: #374054;
-
 }
 
 #experience-timeline {
@@ -414,7 +413,7 @@ footer {
     border: 1px solid #e6e6e6;
     padding: 15px;
     border-radius: 3px;
-    text-align: left
+    text-align: left;
 }
 
 .vtimeline-content h3 {
@@ -441,7 +440,7 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
+    /* vertical-align: top; */
     margin-bottom: 30px
 }
 
@@ -513,13 +512,17 @@ footer {
 
 .education-block p,
 .education-block ul {
+    list-style: none;
     margin: 0;
     color: #74808a;
-    font-size: 0.9em
+    font-size: 0.9em;
+    li::before {content: "\2605"; color: red; display: inline-block; width: 1em; margin-left: -1em}
 }
 
+/*li::before {content: "\2605"; color: red; display: inline-block; width: 1em; margin-left: -1em}*/
+
 .education-block ul {
-    padding: 0 0 0 15px
+    padding: 0 0 0 15px;
 }
 
 #projects {
